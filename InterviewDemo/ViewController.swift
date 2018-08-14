@@ -15,6 +15,7 @@ var array = [120,60,30,150,200,300,500,25,32,7]
         array = array.sorted(by: <)
         print(array)
         print(array.prefix(5))
+        print(array.count)
     }
 
     override func didReceiveMemoryWarning() {
