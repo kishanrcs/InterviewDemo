@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 var array = [120,60,30,150,200,300,500,25,32,7]
+    
+    @IBOutlet weak var lbl_display: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         array = array.sorted(by: <)
         print(array)
         print(array.prefix(5))
         print(array.count)
+        lbl_display.text = "printed first 5 small elements"
     }
 
     override func didReceiveMemoryWarning() {
